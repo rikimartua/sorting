@@ -1,0 +1,34 @@
+/* nama   = riki martua aritonag
+ * nim    = 123180028
+ * matkul = praktikum lago*/
+#include <iostream>
+#include <string.h>
+#include <conio.h>
+using namespace std;
+int main(){
+char kalimat[100],temp[1];
+int jumlah;
+cout<<"Masukkan kalimat = ";
+cin.getline(kalimat,100);
+cout<<".\n.\n.\n.\n.\n";
+cout<<"Sebelum sorting = "<<kalimat;
+jumlah=strlen(kalimat);
+for (int i = 1; i < jumlah; i++)
+{
+	for (int j = 0; j < jumlah; j++)
+	{
+		if (kalimat[i]<kalimat[j])
+		{
+			temp[0]=kalimat[i];
+			kalimat[i]=kalimat[j];
+			kalimat[j]=temp[0];
+			
+		}
+		
+	}
+
+}
+	cout<<"\nsetelah sorting = "<<kalimat;
+	
+	
+}
